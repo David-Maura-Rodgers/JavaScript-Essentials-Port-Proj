@@ -88,7 +88,6 @@ button {
 button:hover {
     color: #252525;
     transform: skew(-10deg);
-    font-weight: bolder;
 }
 
 table {
@@ -101,5 +100,4 @@ table {
 table th, tr, td {
     padding: 15px 12px;
     border: solid rgb(199, 100, 43) 1.5px;
-    text-align: center;
 }
