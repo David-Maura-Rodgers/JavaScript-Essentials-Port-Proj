@@ -3,7 +3,6 @@
 body {
     background-color: #b7cad1;
     font-family: "Raleway", sans-serif;
-    color: #445361;
     text-align: center;
 }
 
@@ -12,6 +11,10 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+}
+
+#player {
+    margin-right: 470px;
 }
 
 .game-area {
@@ -24,4 +27,43 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+}
+
+#computer {
+    margin-left: 470px;
+}
+
+#player-screen {
+    background-color: white;
+    border: rgb(199, 100, 43) solid 5px;
+    width: 250px;
+    height: 250px;
+    float: left;
+    
+    /*position: relative;
+    margin: -15px 30px;
+    padding: 1%;
+    */
+}
+
+#versus {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 370px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#computer-screen {
+    background-color: white;
+    border: rgb(199, 100, 43) solid 5px;
+    width: 250px;
+    height: 250px;
+    float: right;
+
+    /*
+    position: absolute;
+    top: 200px; right: 400px;
+    padding: 1%;
+    */
 }
