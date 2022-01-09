@@ -39,6 +39,8 @@ body {
     width: 250px;
     height: 250px;
     float: left;
+    text-align: center;
+    font-size: 2.5em;
     
     /*position: relative;
     margin: -15px 30px;
@@ -60,10 +62,44 @@ body {
     width: 250px;
     height: 250px;
     float: right;
+    text-align: center;
+    font-size: 2.5em;
 
     /*
     position: absolute;
     top: 200px; right: 400px;
     padding: 1%;
     */
+}
+
+button {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    font-weight: bolder;
+    border: rgb(199, 100, 43) solid 2.5px;
+    padding: 1%;
+    margin: 3%;
+}
+
+button:hover {
+    color: #252525;
+    transform: skew(-10deg);
+    font-weight: bolder;
+}
+
+table {
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1%;
+}
+
+table th, tr, td {
+    padding: 15px 12px;
+    border: solid rgb(199, 100, 43) 1.5px;
+    text-align: center;
 }
