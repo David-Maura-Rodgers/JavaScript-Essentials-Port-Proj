@@ -19,7 +19,7 @@ function playGame() {
 }
 
 
-const cards = ["rock", "paper", "scissors", "lizzard", "spock"];
+const cards = ["rock", "paper", "scissors", "lizard", "spock"];
 
 //Have for loop or the above loop to generate a card for player and another for, maybe one of those matrix arrays
 //Assign the result of loop for each player
@@ -32,7 +32,7 @@ let computerCard = "spock"
 // Rock Scenario for player
 if (playerCard === "rock" && computerCard === "scissors") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`); 
-} else if (playerCard === "rock" && computerCard === "lizzard") {
+} else if (playerCard === "rock" && computerCard === "lizard") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);    
 } else if (playerCard === "rock" && computerCard === "paper") {
     console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
@@ -47,7 +47,7 @@ if (playerCard === "paper" && computerCard === "rock") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
 } else if (playerCard === "paper" && computerCard === "spock") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
-} else if (playerCard === "paper" && computerCard === "lizzard") {
+} else if (playerCard === "paper" && computerCard === "lizard") {
     console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
 } else if (playerCard === "paper" && computerCard === "scissors") {
     console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
@@ -56,17 +56,20 @@ if (playerCard === "paper" && computerCard === "rock") {
 }
 
 //Scissors Scenario for player
-if (playerCard === "paper" && computerCard === "rock") {
+if (playerCard === "scissors" && computerCard === "paper") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
-} else if (playerCard === "paper" && computerCard === "spock") {
+} else if (playerCard === "scissors" && computerCard === "lizard") {
     console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
-} else if (playerCard === "paper" && computerCard === "lizzard") {
+} else if (playerCard === "scissors" && computerCard === "spock") {
     console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
-} else if (playerCard === "paper" && computerCard === "scissors") {
+} else if (playerCard === "scissors" && computerCard === "rock") {
     console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
-} else if (playerCard === "paper" && computerCard === "paper") {
+} else if (playerCard === "scissors" && computerCard === "scissors") {
     console.log(`${playerCard} draws with ${computerCard}. No points awarded to either player.`); 
 }
+
+
+
 
 
 function addScore() {
