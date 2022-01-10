@@ -1,9 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
 
-/*
-button.addEventListener("click", function() {
-    playGame();
-}
-*/
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "submit") {
+				checkAnswer();
+			} else {
+				let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+		});
+    }
 
 function playGame() {
 
@@ -101,3 +108,4 @@ function addScore() {
 
 }
 
+}
