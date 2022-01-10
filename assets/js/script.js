@@ -68,6 +68,31 @@ if (playerCard === "scissors" && computerCard === "paper") {
     console.log(`${playerCard} draws with ${computerCard}. No points awarded to either player.`); 
 }
 
+//Lizard Scenario for player
+if (playerCard === "lizard" && computerCard === "spock") {
+    console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "paper") {
+    console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "rock") {
+    console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "scissors") {
+    console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "lizard") {
+    console.log(`${playerCard} draws with ${computerCard}. No points awarded to either player.`); 
+}
+
+//Lizard Scenario for player
+if (playerCard === "lizard" && computerCard === "spock") {
+    console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "paper") {
+    console.log(`${playerCard} beats ${computerCard}. Player gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "rock") {
+    console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "scissors") {
+    console.log(`${playerCard} loses to ${computerCard}. Computer gets 1 point.`);
+} else if (playerCard === "lizard" && computerCard === "lizard") {
+    console.log(`${playerCard} draws with ${computerCard}. No points awarded to either player.`); 
+}
 
 
 
