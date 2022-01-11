@@ -15,10 +15,48 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
-
 </head>
+
 <body>
     <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
+
+    
+
+
+    <div id="player-area">
+        <button data-type="play-player" class="btn-play-player" id="play-player">
+        <i class="fas fa-play"></i> Play Player
+        </button>
+        <p id="demo-p"></p>
+
+        <script>
+        document.getElementById("play-player").addEventListener("click", myFunction);
+            
+        function myFunction() {
+            document.getElementById("demo-p").innerHTML = "Hello World";
+        }
+         </script>    
+    </div>
+
+    <div id="computer-area">
+        <button data-type="play-computer" class="btn-play-computer" id="play-computer">
+        <i class="fas fa-play"></i> Play Computer
+        </button>
+
+        <p id="demo-c"></p>
+        <script>
+        document.getElementById("play-computer").addEventListener("click", playerCard);
+
+            function playerCard() {
+            const months = ["January", "February", "March", "April", "May", "June", "July"];
+
+            const random = Math.floor(Math.random() * months.length);
+            console.log(random, months[random]);
+            document.getElementById("demo-c").innerHTML = (random, months[random]);
+        }
+         </script>
+    </div>
+
 
     <div id="card-area">
         <button data-type="rock" class="btn" id="rock-card">
