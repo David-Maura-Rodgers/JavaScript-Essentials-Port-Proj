@@ -1,18 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByTagName("button");
-
-	for (let button of buttons) {
-		button.addEventListener("click", function() {
-			if (this.getAttribute("data-type") === "play") {
-				playGame();
-			} 
-		});
-    }
-
 //Have for loop or the above loop to generate a card for player and another for, maybe one of those matrix arrays
 //Assign the result of loop for each player
 //For now, put it in an alert connect to play button (maybe) 
 //Have buutons for player card and selection and random loop for compter card
+
+function computerCard() {
+    
+}
 
 function playGame(playerCard) {
 
@@ -20,7 +13,7 @@ function playGame(playerCard) {
     
     const cards = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    let computerCard = Math.floor(Math.random() * cards.length);
+    let computerCard = Math.floor(Math.random() * cards.length) +1;
     
     // Paper Scenario for player
     if (playerCard === "rock" && computerCard === "scissors") {
@@ -94,4 +87,16 @@ function addScore() {
 
 }
 
-});
+
+/*
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
+
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "play") {
+				playGame();
+			} 
+		});
+    }
+*/

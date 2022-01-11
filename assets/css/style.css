@@ -11,14 +11,50 @@ body {
     font-size: 2.5rem;
 }
 
-.results-area {
+#card-area {
+    background-color:bisque;
+    box-sizing: border-box;
+}
+
+#results-area {
     width: 50%;
     height: 100px;
     padding: 75px;
     align-content: center;
-    margin: 0 auto;
+    margin: 2.5% auto;
     border: rgb(199, 100, 43) solid 5px;
 }
+
+.btn {
+    width: 160px;
+    height: 160px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: large;
+    color: black;
+}
+
+button {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    font-weight: bolder;
+    border: rgb(199, 100, 43) solid 2.5px;
+    padding: 1%;
+    margin: 3%;
+    cursor: pointer;
+    outline: none;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} 
 
 /*
 #player {
@@ -92,33 +128,6 @@ body {
     
 }
 */
-
-.btn {
-    width: 160px;
-    height: 160px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    font-size: large;
-    color: black;
-}
-
-button {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
-    font-weight: bolder;
-    border: rgb(199, 100, 43) solid 2.5px;
-    padding: 1%;
-    margin: 3%;
-}
-
-button:hover {
-    transform: skew(-10deg);
-}
 
 /*
 table {
