@@ -11,9 +11,20 @@ body {
     font-size: 2.5rem;
 }
 
+.results-area {
+    width: 50%;
+    height: 100px;
+    padding: 75px;
+    align-content: center;
+    margin: 0 auto;
+    border: rgb(199, 100, 43) solid 5px;
+}
+
+/*
 #player {
     margin-right: 470px;
 }
+*/
 
 /*
 .game-area {
