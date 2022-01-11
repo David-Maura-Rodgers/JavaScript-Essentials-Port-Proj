@@ -27,15 +27,19 @@
         <button data-type="play-player" class="btn-play-player" id="play-player">
         <i class="fas fa-play"></i> Play Player
         </button>
-        <p id="demo-p"></p>
+        <p id="card-p"></p>
 
         <script>
-        document.getElementById("play-player").addEventListener("click", myFunction);
-            
-        function myFunction() {
-            document.getElementById("demo-p").innerHTML = "Hello World";
-        }
-         </script>    
+            document.getElementById("play-player").addEventListener("click", playerCard);
+    
+                function playerCard() {
+                const months = ["Rock", "Paper", "Scissors", "Lizzard", "Spock"];
+    
+                const random = Math.floor(Math.random() * months.length);
+                console.log(random, months[random]);
+                document.getElementById("card-p").innerHTML = (random, months[random]);
+            }
+             </script>   
     </div>
 
     <div id="computer-area">
@@ -43,16 +47,17 @@
         <i class="fas fa-play"></i> Play Computer
         </button>
 
-        <p id="demo-c"></p>
-        <script>
-        document.getElementById("play-computer").addEventListener("click", playerCard);
+        <p id="card-c"></p>
 
-            function playerCard() {
-            const months = ["January", "February", "March", "April", "May", "June", "July"];
+        <script>
+        document.getElementById("play-computer").addEventListener("click", computerCard);
+
+            function computerCard() {
+            const months = ["Rock", "Paper", "Scissors", "Lizzard", "Spock"];
 
             const random = Math.floor(Math.random() * months.length);
             console.log(random, months[random]);
-            document.getElementById("demo-c").innerHTML = (random, months[random]);
+            document.getElementById("card-c").innerHTML = (random, months[random]);
         }
          </script>
     </div>
