@@ -1,13 +1,14 @@
 // Have for loop or the above loop to generate a card for player and another for, maybe one of those matrix arrays
 // Assign the result of loop for each player
 // For now, put it in an alert connect to play button (maybe) 
-// Have buutons for player card and selection and random loop for compter card
+// Have butons for player card and selection and random loop for computer card
+
+// JavaScript-Specific Core Concepts  JavaScript Flow Control  If/Else Statements (check this fpr computer card generator)
 
 
 document.getElementById("play-player").addEventListener("click", function() {
     document.getElementById("demo-p").innerHTML = "Hello World";
   });
-
 
 
 // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
