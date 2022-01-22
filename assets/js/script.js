@@ -1,46 +1,26 @@
-// Have for loop or the above loop to generate a card for player and another for, maybe one of those matrix arrays
-// Assign the result of loop for each player
-// For now, put it in an alert connect to play button (maybe) 
-// Have butons for player card and selection and random loop for computer card
+// JavaScript-Specific Core Concepts  JavaScript Flow Control  If/Else Statements (check this for computer card generator)
 
-// JavaScript-Specific Core Concepts  JavaScript Flow Control  If/Else Statements (check this fpr computer card generator)
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
 
-
-document.getElementById("play-player").addEventListener("click", function() {
-    document.getElementById("demo-p").innerHTML = "Hello World";
-  });
-
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "card") {
+				runGame();
+			} 
+		});
+	}
+});
 
 // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
-
-
-function playerCard() {
-
-    const months = ["January", "February", "March", "April", "May", "June", "July"];
-
-    const random = Math.floor(Math.random() * months.length);
-    console.log(random, months[random]);
-
-}
-
-
-function computerCard() {
-
-    const months = ["January", "February", "March", "April", "May", "June", "July"];
-
-    const random = Math.floor(Math.random() * months.length);
-    console.log(random, months[random]);
-
-}
-
-
-function playGame(playerCard) {
+function playGame() {
 
     let playerCard = document.getElementsByTagName('button'); 
     
     const cards = ["rock", "paper", "scissors", "lizard", "spock"];
 
     let computerCard = Math.floor(Math.random() * cards.length) +1;
+
     
     // Paper Scenario for player
     if (playerCard === "rock" && computerCard === "scissors") {
@@ -106,24 +86,9 @@ function playGame(playerCard) {
     } else if (playerCard === "spock" && computerCard === "spock") {
         alert(`${playerCard} draws with ${computerCard}. No points awarded to either player.`); 
     }
- 
 }
 
 
 function addScore() {
 
 }
-
-
-/*
-document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByTagName("button");
-
-	for (let button of buttons) {
-		button.addEventListener("click", function() {
-			if (this.getAttribute("data-type") === "play") {
-				playGame();
-			} 
-		});
-    }
-*/
